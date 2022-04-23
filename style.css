@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);    
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray_background_headings_buttons: hsl(0, 0%, 95%);
+
+}
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+ 
+}
+.container h2{
+   font-family: 'Big Shoulders Display', cursive;
+   color: var(--Very-light-gray_background_headings_buttons);
+   margin: 1.8rem;
+} 
+.container .sedans{
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.container .suvs{
+    background-color: var(--Dark-cyan);
+
+}
+.container .luxury{
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.container p{
+    color: var(--Transparent-white-paragraphs);
+    margin: 1.8rem;
+    font-size: 15px;
+  
+}
+.container img{
+    margin: 1.8rem;
+    margin-bottom: -2px;
+    width: 3rem;
+}
+.container button{
+    margin: 1.8rem;
+    border: 1px solid var(--Very-light-gray_background_headings_buttons);
+    border-radius: 15rem ;
+    padding: 9px;
+    width: 6rem;
+    font-size: 0.7rem;
+    background-color: var(--Very-light-gray_background_headings_buttons);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.sedans button{
+    color: var(--Bright-orange);
+}
+.suvs button{
+    color: var(--Dark-cyan);
+}
+.luxury button{
+    color: var(--Very-dark-cyan);
+}
+
+
+ @media(min-width:1000px){
+    body{
+    height: 100vh;
+    }
+    .container{
+   max-width: 800px;
+   margin-left: 9rem;
+    }
+}
+@media(max-width:410px){
+    body{
+ 
+    }
+    .container{
+        display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 0.5rem;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+    .container .sedans{
+        background-color: var(--Bright-orange);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+    .container .luxury{
+        background-color: var(--Very-dark-cyan);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0rem;
+    }
+} 
